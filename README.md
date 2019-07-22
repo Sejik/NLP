@@ -1,19 +1,19 @@
 <p align="center">
-<img src="images/logo.png" style="inline" width=300>
+    <img src="images/logo.png" style="inline" width=300>
 </p>
 
 <h4 align="center">Sejik's NLP Framework</h4>
 
 <p align="center">
-<a href='https://nlp-docs.readthedocs.io/en/latest/'>
-<img src='https://readthedocs.org/projects/nlp-docs/badge/?version=latest' alt='Documentation Status' />
-</a>
-<img src='https://travis-ci.org/Sejik/NLP.svg?branch=master/>
-<a href="https://github.com/ambv/black">
-<img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black">
-<a href="https://codecov.io/gh/Sejik/NLP">
-<img src="https://codecov.io/gh/Sejik/NLP/branch/master/graph/badge.svg" />
-</a>
+    <a href='https://nlp-docs.readthedocs.io/en/latest/'>
+        <img src='https://readthedocs.org/projects/nlp-docs/badge/?version=latest' alt='Documentation Status' />
+        </a>
+        <img src='https://travis-ci.org/Sejik/NLP.svg?branch=master/>
+        <a href="https://github.com/ambv/black">
+            <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black">
+    <a href="https://codecov.io/gh/Sejik/NLP">
+        <img src="https://codecov.io/gh/Sejik/NLP/branch/master/graph/badge.svg" />
+    </a>
 </p>
 
 ---
