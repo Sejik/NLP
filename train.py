@@ -3,7 +3,7 @@ if __name__ == "__main__":
     experiment_setting
     experiment_operation
     """
-
+    print("test")
     #setting = experiment_setting()
     #experiment_operation()
 
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 # mode:
 """
 class Mode:
-    """ Experiment Flag class """
+    # Experiment Flag class
     
     TRAIN = "train"
     EVAL = "eval"
