@@ -1,9 +1,12 @@
+def test_travis():
+    print("testing Travis CI")
+
 if __name__ == "__main__":
     """
     experiment_setting
     experiment_operation
     """
-    print("test")
+    test_travis()
     #setting = experiment_setting()
     #experiment_operation()
 
