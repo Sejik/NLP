@@ -1,9 +1,16 @@
 language: python
 python:
-- "3.5"
+  - "3.6"
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install: 
+  - pip install --upgrade pip
+  - pip install --progress-bar off -r requirements.txt
+  - pip install --progress-bar off codecov
+  - python -m nltk.downloader punkt
+  - python -m nltk.downloader wordnet
+  - export BOTO_CONFIG=/dev/nul
 # command to run tests
-script: pytest train.py
+script: 
+    python -m pytest tests --cov-report term --cov claf
 after_success:
-- codecov
+    codecov -t b25c1297-5804-4e98-ae19-7d906115c26f
