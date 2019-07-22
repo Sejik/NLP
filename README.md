@@ -8,9 +8,12 @@
     <a href='https://nlp-docs.readthedocs.io/en/latest'>
         <img src='https://readthedocs.org/projects/nlp-docs/badge/?version=latest' alt='Documentation Status' />
     </a>
-    <img src='https://travis-ci.org/Sejik/NLP.svg?branch=master'/>
+    <a href='https://travis-ci.org/Sejik/NLP'>
+        <img src='https://travis-ci.org/Sejik/NLP.svg?branch=master'/>
+    </a>
     <a href="https://github.com/ambv/black">
         <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black">
+    </a>
     <a href="https://codecov.io/gh/Sejik/NLP">
         <img src="https://codecov.io/gh/Sejik/NLP/branch/master/graph/badge.svg" />
     </a>
