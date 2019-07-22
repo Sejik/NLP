@@ -5,7 +5,7 @@
 <h4 align="center">Sejik's NLP Framework</h4>
 
 <p align="center">
-<a href='https://naver.github.io/claf'>
+<a href='https://nlp-docs.readthedocs.io/en/latest/'>
 <img src='https://readthedocs.org/projects/nlp-docs/badge/?version=latest' alt='Documentation Status' />
 </a>
 <img src='https://travis-ci.org/Sejik/NLP.svg?branch=master/>
