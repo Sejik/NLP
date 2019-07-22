@@ -11,6 +11,6 @@ install:
 #  - export BOTO_CONFIG=/dev/nul
 # command to run tests
 script: 
-    python -m pytest tests --cov-report term --cov claf
+    python -m pytest tests --cov-report term --cov nlp
 after_success:
     codecov -t b25c1297-5804-4e98-ae19-7d906115c26f
