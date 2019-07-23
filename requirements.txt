@@ -1,34 +1,34 @@
 # Backends
-numpy>=1.15.0
-torch>=1.0.1
+#numpy>=1.15.0
+#torch>=1.0.1
 
 # Tokenizer
-konlpy
-nltk
-spacy>=2.1.4
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.1.0/en_core_web_sm-2.1.0.tar.gz
+#konlpy
+#nltk
+#spacy>=2.1.4
+#https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.1.0/#en_core_web_sm-2.1.0.tar.gz
 
 # BERT
-pytorch-pretrained-bert>=0.6.1
+#pytorch-pretrained-bert>=0.6.1
 
 # WikiSQL
-babel
-records
+#babel
+#records
 
 # Utils
-h5py
-jsbeautifier
-msgpack
-overrides
-requests
-gensim
-tqdm
-tensorboardX
+#h5py
+#jsbeautifier
+#msgpack
+#overrides
+#requests
+#gensim
+#tqdm
+#tensorboardX
 
 # Test, CI
 pytest>=3.6
 pytest-cov
 
 # Classification
-pycm
-seqeval
+#pycm
+#seqeval
