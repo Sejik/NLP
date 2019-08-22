@@ -23,13 +23,6 @@
 
 # NLP
 **NLP** design principle is based on [CLaf](https://github.com/naver/claf)
-1. Docs: https://readthedocs.org/
-              https://img.shields.io/
-              http://www.sphinx-doc.org/en/master/
-2. Testing: https://travis-ci.org/
-3. Reviewing: https://codecov.io
-4. Dataset: [KorQuAD](https://korquad.github.io), SQuAD, EMNLP
-- 참가방법: [KorQuAD](https://github.com/graykode/KorQuAD-beginner)
 
 ## Table of Contents
 - [Installation](#installation) 
