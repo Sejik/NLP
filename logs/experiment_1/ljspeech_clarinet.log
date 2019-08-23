@@ -228,3 +228,687 @@
     "gpu_num": 0
 }
 
+2019-08-23 21:17:46,922 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 21:17:50,036 (experiment.py:94): [INFO] - Config. 
+{
+    "seed_num": 21,
+    "data_reader": {
+        "dataset": "ljspeech",
+        "train_file_path": "LJSpeech-1.1/"
+    },
+    "iterator": {
+        "batch_size": 8
+    },
+    "model": {
+        "name": "clarinet",
+        "clarinet": {
+            "num_block": 2,
+            "num_layers": 10,
+            "residual_channels": 128,
+            "gate_channels": 256,
+            "skip_channels": 128,
+            "cin_channels": 2
+        }
+    },
+    "trainer": {
+        "num_epochs": 1000,
+        "save_epoch_count": 1,
+        "log_dir": "logs/experiment_1"
+    },
+    "optimizer": {
+        "op_type": "adam",
+        "learning_rate": 0.001,
+        "adadelta": {
+            "rho": 0.9,
+            "eps": 1e-06,
+            "weight_decay": 0
+        },
+        "adagrad": {
+            "lr_decay": 0,
+            "weight_decay": 0
+        },
+        "adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "sparse_adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        },
+        "adamax": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "averaged_sgd": {
+            "lambd": 0.0001,
+            "alpha": 0.75,
+            "t0": 1000000.0,
+            "weight_decay": 0
+        },
+        "rmsprop": {
+            "momentum": 0,
+            "alpha": 0.99,
+            "eps": 1e-08,
+            "centered": false,
+            "weight_decay": 0
+        },
+        "sgd": {
+            "momentum": 0,
+            "dampening": 0,
+            "nesterov": false,
+            "weight_decay": 0
+        },
+        "step": {
+            "step_size": 1,
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "multi_step": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "exponential": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "cosine": {
+            "T_max": 50,
+            "eta_min": 0,
+            "last_epoch": -1
+        },
+        "reduce_on_plateau": {
+            "factor": 0.1,
+            "mode": "min",
+            "patience": 10,
+            "threshold": 0.0001,
+            "threshold_mode": "rel",
+            "cooldown": 0,
+            "min_lr": 0,
+            "eps": 1e-08
+        },
+        "warmup": {
+            "final_step": 1000,
+            "last_epoch": -1
+        },
+        "ema": {
+            "decay": 0.9999
+        }
+    },
+    "use_gpu": false,
+    "gpu_num": 0
+}
+
+2019-08-23 21:19:20,033 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 21:34:00,732 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 21:35:37,644 (experiment.py:94): [INFO] - Config. 
+{
+    "seed_num": 21,
+    "data_reader": {
+        "dataset": "ljspeech",
+        "train_file_path": "LJSpeech-1.1/"
+    },
+    "iterator": {
+        "batch_size": 8
+    },
+    "model": {
+        "name": "clarinet",
+        "clarinet": {
+            "num_block": 2,
+            "num_layers": 10,
+            "residual_channels": 128,
+            "gate_channels": 256,
+            "skip_channels": 128,
+            "cin_channels": 2
+        }
+    },
+    "trainer": {
+        "num_epochs": 1000,
+        "save_epoch_count": 1,
+        "log_dir": "logs/experiment_1"
+    },
+    "optimizer": {
+        "op_type": "adam",
+        "learning_rate": 0.001,
+        "adadelta": {
+            "rho": 0.9,
+            "eps": 1e-06,
+            "weight_decay": 0
+        },
+        "adagrad": {
+            "lr_decay": 0,
+            "weight_decay": 0
+        },
+        "adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "sparse_adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        },
+        "adamax": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "averaged_sgd": {
+            "lambd": 0.0001,
+            "alpha": 0.75,
+            "t0": 1000000.0,
+            "weight_decay": 0
+        },
+        "rmsprop": {
+            "momentum": 0,
+            "alpha": 0.99,
+            "eps": 1e-08,
+            "centered": false,
+            "weight_decay": 0
+        },
+        "sgd": {
+            "momentum": 0,
+            "dampening": 0,
+            "nesterov": false,
+            "weight_decay": 0
+        },
+        "step": {
+            "step_size": 1,
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "multi_step": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "exponential": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "cosine": {
+            "T_max": 50,
+            "eta_min": 0,
+            "last_epoch": -1
+        },
+        "reduce_on_plateau": {
+            "factor": 0.1,
+            "mode": "min",
+            "patience": 10,
+            "threshold": 0.0001,
+            "threshold_mode": "rel",
+            "cooldown": 0,
+            "min_lr": 0,
+            "eps": 1e-08
+        },
+        "warmup": {
+            "final_step": 1000,
+            "last_epoch": -1
+        },
+        "ema": {
+            "decay": 0.9999
+        }
+    },
+    "use_gpu": false,
+    "gpu_num": 0
+}
+
+2019-08-23 22:16:49,974 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 22:17:17,206 (experiment.py:94): [INFO] - Config. 
+{
+    "seed_num": 21,
+    "data_reader": {
+        "dataset": "ljspeech",
+        "train_file_path": "LJSpeech-1.1/"
+    },
+    "iterator": {
+        "batch_size": 8
+    },
+    "model": {
+        "name": "clarinet",
+        "clarinet": {
+            "num_block": 2,
+            "num_layers": 10,
+            "residual_channels": 128,
+            "gate_channels": 256,
+            "skip_channels": 128,
+            "cin_channels": 80,
+            "kernel_size": 2
+        }
+    },
+    "trainer": {
+        "num_epochs": 1000,
+        "save_epoch_count": 1,
+        "log_dir": "logs/experiment_1"
+    },
+    "optimizer": {
+        "op_type": "adam",
+        "learning_rate": 0.001,
+        "adadelta": {
+            "rho": 0.9,
+            "eps": 1e-06,
+            "weight_decay": 0
+        },
+        "adagrad": {
+            "lr_decay": 0,
+            "weight_decay": 0
+        },
+        "adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "sparse_adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        },
+        "adamax": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "averaged_sgd": {
+            "lambd": 0.0001,
+            "alpha": 0.75,
+            "t0": 1000000.0,
+            "weight_decay": 0
+        },
+        "rmsprop": {
+            "momentum": 0,
+            "alpha": 0.99,
+            "eps": 1e-08,
+            "centered": false,
+            "weight_decay": 0
+        },
+        "sgd": {
+            "momentum": 0,
+            "dampening": 0,
+            "nesterov": false,
+            "weight_decay": 0
+        },
+        "step": {
+            "step_size": 1,
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "multi_step": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "exponential": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "cosine": {
+            "T_max": 50,
+            "eta_min": 0,
+            "last_epoch": -1
+        },
+        "reduce_on_plateau": {
+            "factor": 0.1,
+            "mode": "min",
+            "patience": 10,
+            "threshold": 0.0001,
+            "threshold_mode": "rel",
+            "cooldown": 0,
+            "min_lr": 0,
+            "eps": 1e-08
+        },
+        "warmup": {
+            "final_step": 1000,
+            "last_epoch": -1
+        },
+        "ema": {
+            "decay": 0.9999
+        }
+    },
+    "use_gpu": false,
+    "gpu_num": 0
+}
+
+2019-08-23 22:19:55,259 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 22:19:58,058 (experiment.py:94): [INFO] - Config. 
+{
+    "seed_num": 21,
+    "data_reader": {
+        "dataset": "ljspeech",
+        "train_file_path": "LJSpeech-1.1/"
+    },
+    "iterator": {
+        "batch_size": 8
+    },
+    "model": {
+        "name": "clarinet",
+        "clarinet": {
+            "num_block": 2,
+            "num_layers": 10,
+            "residual_channels": 128,
+            "gate_channels": 256,
+            "skip_channels": 128,
+            "cin_channels": 80,
+            "kernel_size": 2
+        }
+    },
+    "trainer": {
+        "num_epochs": 1000,
+        "save_epoch_count": 1,
+        "log_dir": "logs/experiment_1"
+    },
+    "optimizer": {
+        "op_type": "adam",
+        "learning_rate": 0.001,
+        "adadelta": {
+            "rho": 0.9,
+            "eps": 1e-06,
+            "weight_decay": 0
+        },
+        "adagrad": {
+            "lr_decay": 0,
+            "weight_decay": 0
+        },
+        "adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "sparse_adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        },
+        "adamax": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "averaged_sgd": {
+            "lambd": 0.0001,
+            "alpha": 0.75,
+            "t0": 1000000.0,
+            "weight_decay": 0
+        },
+        "rmsprop": {
+            "momentum": 0,
+            "alpha": 0.99,
+            "eps": 1e-08,
+            "centered": false,
+            "weight_decay": 0
+        },
+        "sgd": {
+            "momentum": 0,
+            "dampening": 0,
+            "nesterov": false,
+            "weight_decay": 0
+        },
+        "step": {
+            "step_size": 1,
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "multi_step": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "exponential": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "cosine": {
+            "T_max": 50,
+            "eta_min": 0,
+            "last_epoch": -1
+        },
+        "reduce_on_plateau": {
+            "factor": 0.1,
+            "mode": "min",
+            "patience": 10,
+            "threshold": 0.0001,
+            "threshold_mode": "rel",
+            "cooldown": 0,
+            "min_lr": 0,
+            "eps": 1e-08
+        },
+        "warmup": {
+            "final_step": 1000,
+            "last_epoch": -1
+        },
+        "ema": {
+            "decay": 0.9999
+        }
+    },
+    "use_gpu": false,
+    "gpu_num": 0
+}
+
+2019-08-23 22:22:29,898 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 22:22:30,060 (experiment.py:94): [INFO] - Config. 
+{
+    "seed_num": 21,
+    "data_reader": {
+        "dataset": "ljspeech",
+        "train_file_path": "LJSpeech-1.1/"
+    },
+    "iterator": {
+        "batch_size": 8
+    },
+    "model": {
+        "name": "clarinet",
+        "clarinet": {
+            "num_block": 2,
+            "num_layers": 10,
+            "residual_channels": 128,
+            "gate_channels": 256,
+            "skip_channels": 128,
+            "cin_channels": 80,
+            "kernel_size": 2
+        }
+    },
+    "trainer": {
+        "num_epochs": 1000,
+        "save_epoch_count": 1,
+        "log_dir": "logs/experiment_1"
+    },
+    "optimizer": {
+        "op_type": "adam",
+        "learning_rate": 0.001,
+        "adadelta": {
+            "rho": 0.9,
+            "eps": 1e-06,
+            "weight_decay": 0
+        },
+        "adagrad": {
+            "lr_decay": 0,
+            "weight_decay": 0
+        },
+        "adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "sparse_adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        },
+        "adamax": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "averaged_sgd": {
+            "lambd": 0.0001,
+            "alpha": 0.75,
+            "t0": 1000000.0,
+            "weight_decay": 0
+        },
+        "rmsprop": {
+            "momentum": 0,
+            "alpha": 0.99,
+            "eps": 1e-08,
+            "centered": false,
+            "weight_decay": 0
+        },
+        "sgd": {
+            "momentum": 0,
+            "dampening": 0,
+            "nesterov": false,
+            "weight_decay": 0
+        },
+        "step": {
+            "step_size": 1,
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "multi_step": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "exponential": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "cosine": {
+            "T_max": 50,
+            "eta_min": 0,
+            "last_epoch": -1
+        },
+        "reduce_on_plateau": {
+            "factor": 0.1,
+            "mode": "min",
+            "patience": 10,
+            "threshold": 0.0001,
+            "threshold_mode": "rel",
+            "cooldown": 0,
+            "min_lr": 0,
+            "eps": 1e-08
+        },
+        "warmup": {
+            "final_step": 1000,
+            "last_epoch": -1
+        },
+        "ema": {
+            "decay": 0.9999
+        }
+    },
+    "use_gpu": false,
+    "gpu_num": 0
+}
+
+2019-08-23 22:24:19,885 (deprecation_wrapper.py:119): [WARNING] - From /Users/sejik/Documents/my_project/NLP/NLP/config/utils.py:51: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2019-08-23 22:24:20,046 (experiment.py:94): [INFO] - Config. 
+{
+    "seed_num": 21,
+    "data_reader": {
+        "dataset": "ljspeech",
+        "train_file_path": "LJSpeech-1.1/"
+    },
+    "iterator": {
+        "batch_size": 8
+    },
+    "model": {
+        "name": "clarinet",
+        "clarinet": {
+            "num_block": 2,
+            "num_layers": 10,
+            "residual_channels": 128,
+            "gate_channels": 256,
+            "skip_channels": 128,
+            "cin_channels": 80,
+            "kernel_size": 2
+        }
+    },
+    "trainer": {
+        "num_epochs": 1000,
+        "save_epoch_count": 1,
+        "log_dir": "logs/experiment_1"
+    },
+    "optimizer": {
+        "op_type": "adam",
+        "learning_rate": 0.001,
+        "adadelta": {
+            "rho": 0.9,
+            "eps": 1e-06,
+            "weight_decay": 0
+        },
+        "adagrad": {
+            "lr_decay": 0,
+            "weight_decay": 0
+        },
+        "adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "sparse_adam": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        },
+        "adamax": {
+            "betas": [0.9, 0.999],
+            "eps": 1e-08,
+            "weight_decay": 0
+        },
+        "averaged_sgd": {
+            "lambd": 0.0001,
+            "alpha": 0.75,
+            "t0": 1000000.0,
+            "weight_decay": 0
+        },
+        "rmsprop": {
+            "momentum": 0,
+            "alpha": 0.99,
+            "eps": 1e-08,
+            "centered": false,
+            "weight_decay": 0
+        },
+        "sgd": {
+            "momentum": 0,
+            "dampening": 0,
+            "nesterov": false,
+            "weight_decay": 0
+        },
+        "step": {
+            "step_size": 1,
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "multi_step": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "exponential": {
+            "gamma": 0.1,
+            "last_epoch": -1
+        },
+        "cosine": {
+            "T_max": 50,
+            "eta_min": 0,
+            "last_epoch": -1
+        },
+        "reduce_on_plateau": {
+            "factor": 0.1,
+            "mode": "min",
+            "patience": 10,
+            "threshold": 0.0001,
+            "threshold_mode": "rel",
+            "cooldown": 0,
+            "min_lr": 0,
+            "eps": 1e-08
+        },
+        "warmup": {
+            "final_step": 1000,
+            "last_epoch": -1
+        },
+        "ema": {
+            "decay": 0.9999
+        }
+    },
+    "use_gpu": false,
+    "gpu_num": 0
+}
+

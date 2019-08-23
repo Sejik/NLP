@@ -18,10 +18,6 @@ def config(argv=None, mode=None):
 
     general(parser)
 
-    if mode == Mode.EVAL:
-        evaluate(parser)
-        return parser.parse_args(argv, namespace=NestedNamespace())
-
     return train_config(parser, input_argv=argv)
 
 
@@ -109,27 +105,6 @@ def general(parser):
     )
 
 
-def evaluate(parser):
-
-    group = parser.add_argument_group("Run evaluate")
-    group.add_argument(
-        "data_file_path",
-        type=str,
-        help=" Path to the file containing the evaluation data"
-    )
-    group.add_argument("checkpoint_path", type=str, help="Path to an checkpoint trained model")
-    group.add_argument(
-        "--infer",
-        default=None, dest="inference_latency", type=int,
-        help=""" Evaluate with inference-latency with maximum value (ms)""",
-    )
-    group.add_argument(
-        "--prev_cuda_device_id",
-        type=int, default=0, dest="prev_cuda_device_id",
-        help=""" Previous cuda device id (need to mapping)""",
-    )
-
-
 def data(parser):
     group = parser.add_argument_group("Data Reader")
     group.add_argument(
@@ -196,8 +171,13 @@ def model(parser):
     )
     group.add_argument(
         "--clarinet.cin_channels",
-        type=int, default=2, dest="model.clarinet.cin_channels",
+        type=int, default=80, dest="model.clarinet.cin_channels",
         help="The size of ClariNet base"
+    )
+    group.add_argument(
+        "--clarinet.kernel_size",
+        type=int, default=2, dest="model.clarinet.kernel_size",
+        help="The size of ClariNet kernel"
     )
 
 

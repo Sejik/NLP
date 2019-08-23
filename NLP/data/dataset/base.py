@@ -1,6 +1,7 @@
 
 from torch.utils.data.dataset import Dataset
 
+
 class DatasetBase(Dataset):
     """
     Dataset Base Model

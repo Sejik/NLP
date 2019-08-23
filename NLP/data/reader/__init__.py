@@ -1,4 +1,4 @@
 
-from NLP.data.reader.ljspeech import LJSpeechDataset
+from NLP.data.reader.ljspeech import LJSpeechReader
 
-__all__ = ["LJSpeechDataset"]  # for register
+__all__ = ["LJSpeechReader"]  # for register

@@ -507,7 +507,4 @@ class Trainer:
         model.train_counter = self.train_counter
         model.metrics = self.metric_logs
 
-        if nsml.IS_ON_NSML:
-            nsml.save(self.train_counter.get_display())
-        else:
-            utils.save_checkpoint(self.log_dir, model, optimizer)
+        utils.save_checkpoint(self.log_dir, model, optimizer)
