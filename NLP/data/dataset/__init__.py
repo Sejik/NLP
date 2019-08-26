@@ -1,4 +1,5 @@
 
-from NLP.data.dataset.ljspeech import LJSpeechDataset
+from NLP.data.dataset.squad import LJSpeechDataset
 
-__all__ = ["LJSpeechDataset"]  # for register
+
+__all__ = ["LJSpeechDataset"]

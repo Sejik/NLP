@@ -1,9 +1,5 @@
 
-import logging
-
 from NLP.config.pattern import Singleton
-
-logger = logging.getLogger(__name__)
 
 
 class Registry(metaclass=Singleton):
@@ -13,19 +9,11 @@ class Registry(metaclass=Singleton):
 
     def __init__(self):
         self._name_to_subclass = {
-            "component": {},
             "reader": {},
-            "machine": {},
-            "model": {},
         }
 
     def add(self, name, obj):
         component_type, component_name = self._split_component_type_and_name(name)
-
-        if component_name in self._name_to_subclass[component_type]:
-            logger.info(
-                f"{component_name} is already included in Registry. It override with {obj}."
-            )
         self._name_to_subclass[component_type][component_name] = obj
 
     def get(self, name):
@@ -43,3 +31,4 @@ class Registry(metaclass=Singleton):
             return names[0], names[1]
         else:
             raise ValueError("do not recognize component_type.")
+

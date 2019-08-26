@@ -22,19 +22,14 @@ class DataReaderFactory(Factory):
 
         self.dataset = config.dataset
         file_paths = {}
-        if getattr(config, "train_file_path", None) and config.train_file_path != "":
-            file_paths["train"] = config.train_file_path
+        if getattr(config, "input_dir") and config.input_dir != "":
+            file_paths["input"] = config.input_dir
 
         self.reader_config = {"file_paths": file_paths}
-        if "params" in config and type(config.params) == dict:
-            self.reader_config.update(config.params)
-
-        dataset_config = getattr(config, config.dataset, None)
-        if dataset_config is not None:
-            dataset_config = vars(dataset_config)
-            self.reader_config.update(dataset_config)
+        # reader_config = ??
 
     @overrides
     def create(self):
         reader = self.registry.get(f"reader:{self.dataset.lower()}")
         return reader(**self.reader_config)
+

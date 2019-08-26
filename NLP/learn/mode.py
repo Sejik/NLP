@@ -1,8 +1,4 @@
 class Mode:
     """ Experiment Flag class """
-
-    TRAIN = "train"
-    EVAL = "eval"
-    INFER_EVAL = "infer_eval"
-    PREDICT = "predict"
-    MACHINE = "machine"
+    
+    ALL_IN_ONE = "all_in_one"
