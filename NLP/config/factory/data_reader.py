@@ -26,7 +26,6 @@ class DataReaderFactory(Factory):
             file_paths["input"] = config.input_dir
 
         self.reader_config = {"file_paths": file_paths}
-        # reader_config = ??
 
     @overrides
     def create(self):

@@ -1,5 +1,5 @@
 
-from NLP.data.dataset.squad import LJSpeechDataset
+from NLP.data.dataset.ljspeech import LJSpeechDataset
 
 
 __all__ = ["LJSpeechDataset"]
