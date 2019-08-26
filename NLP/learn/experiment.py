@@ -53,8 +53,9 @@ class Experiment:
         1. read raw_data (DataReader)
         """
 
-        # TODO
         data_reader = self._create_data()
+        datas, helper = data_reader.read()  # TODO
+
         # 데이터를 어떻게 넘겨주는 것이 좋을지 생각
         # 데이터를 batch로 어떻게 읽을지까지 가져옴
 
