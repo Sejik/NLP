@@ -23,7 +23,7 @@ class DataReaderFactory(Factory):
         self.dataset = config.dataset
         file_paths = {}
         if getattr(config, "input_dir") and config.input_dir != "":
-            file_paths["input"] = config.input_dir
+            file_paths["train"] = config.input_dir
 
         self.reader_config = {"file_paths": file_paths}
 

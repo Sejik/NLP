@@ -59,9 +59,11 @@ class Experiment:
         """
 
         data_reader = self._create_data()
-        datasets, helpers = data_reader.read()
+        datas, helpers = data_reader.read()
 
-        train_loader = self._create_by_factory(
+        datasets = data_reader.convert_to_dataset(datas, helpers=helpers)
+
+        train_loader, synthesize_loader = self._create_by_factory(
             DataLoaderFactory, self.config, param={"datasets": datasets}
         )
 
