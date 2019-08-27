@@ -10,6 +10,7 @@ class Registry(metaclass=Singleton):
     def __init__(self):
         self._name_to_subclass = {
             "reader": {},
+            "model": {},
         }
 
     def add(self, name, obj):

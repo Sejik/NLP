@@ -36,7 +36,7 @@ class LJSpeechReader(DataReader):
         with open(ljspeech) as f:
             for line in f:
                 parts = line.strip().split('|')
-                wav_path = data / 'wavs' / ('%s.wav' % parts[0])  # TODO : check value
+                wav_path = data / 'wavs' / ('%s.wav' % parts[0])
                 text = parts[2]
 
                 future_row = {

@@ -38,7 +38,17 @@ def general(parser):
         type=str, default="ljspeech", dest="general.dataset",
         help=""" Dataset Name [ljspeech] """,
     )
+    group.add_argument(
+        "--log_dir",
+        type=str, default="logs/experiment_1", dest="general.log_dir",
+        help=""" TensorBoard and Checkpoint log directory""",
+    )
 
+    group.add_argument(
+        "--model_name",
+        type=str, default="clarinet", dest="general.model_name",
+        help=""" model name """,
+    )
     group.add_argument(
         "--teacher_model_name",
         type=str, default="wavenet_gaussian", dest="general.teacher_model_name",
@@ -56,8 +66,8 @@ def general(parser):
         help=""" model load step """,
     )
     group.add_argument(
-        "--epochs",
-        type=int, default=1000, dest="general.epochs",
+        "--num_epochs",
+        type=int, default=1000, dest="general.num_epochs",
         help=""" number of epochs to train """,
     )
     group.add_argument(
