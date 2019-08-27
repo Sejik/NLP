@@ -1,4 +1,6 @@
 
+from overrides import overrides
+
 from NLP.config.registry import Registry
 
 from .base import Factory
@@ -17,9 +19,13 @@ class ModelFactory(Factory):
 
     def __init__(self, config):
         self.registry = Registry()
-        # TODO
+
         self.name = config.model_name
         self.model_config = {}
         if getattr(config, config.model_name, None):
             self.model_config = vars(getattr(config, config.model_name))
 
+    @overrides
+    def create(self, **params):
+        model = self.registry.get(f"model:{self.name}")
+        return model(**self.model_config, **params)

@@ -109,16 +109,17 @@ class Experiment:
         return num_train_steps, num_synthesize_steps
 
     def _create_model(self, checkpoint=None, helpers=None):
-        if checkpoint is None:
-            assert helpers is not None
-            first_key = next(iter(helpers))
-            helper = helpers[first_key]  # get first helper
-            model_init_params = helper.get("model", {})
-            predict_helper = helper.get("predict_helper", {})
-        # TODO: else
+        # TODO: checkpoint
+        assert helpers is not None
+        first_key = next(iter(helpers))
+        helper = helpers[first_key]  # get first helper
+        model_init_params = helper.get("model", {})
+        predict_helper = helper.get("predict_helper", {})
+
+        model_params = {}  # TODO
 
         model = self._create_by_factory(  # 파라미터 확인
-            ModelFactory, self.config.general
+            ModelFactory, self.config.general, param=model_params
         )
         model.init_params = model_init_params
         model.predict_helper = predict_helper
