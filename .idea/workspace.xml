@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb53672-f174-4010-bd3c-c858f6a94cbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/NLP/config/args.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLP/config/args.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLP/config/factory/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLP/config/factory/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NLP/config/factory/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLP/config/factory/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NLP/learn/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLP/learn/experiment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NLP/model/wavenet/clarinet.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLP/model/wavenet/clarinet.py" afterDir="false" />
@@ -20,29 +22,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NLP/config/args.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            <state relative-caret-position="309">
+              <caret line="597" selection-start-line="597" selection-end-line="597" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NLP/learn/experiment.py">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/torch/nn/modules/module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#1#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="8570">
+              <caret line="590" selection-start-line="590" selection-end-line="590" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#1#28#0" expanded="true" />
               </folding>
@@ -51,22 +50,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NLP/model/wavenet/clarinet.py">
+        <entry file="file://$PROJECT_DIR$/NLP/learn/experiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="239">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <element signature="e#1#5#0" expanded="true" />
+                <element signature="e#1#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NLP/model/base.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NLP/learn/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NLP/config/pattern.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NLP/config/namespace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -75,25 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>claf</find>
-      <find>read_bytes</find>
-      <find>file_paths</find>
-      <find>Cachepath</find>
-      <find>DAtaset</find>
-      <find>cachepath</find>
-      <find>batch_size</find>
-      <find>general</find>
-      <find>isinstance</find>
-      <find>namespace</find>
-      <find>_name_to_subclass</find>
-      <find>_create_data</find>
-      <find>__dict__</find>
-      <find>data</find>
-      <find>data_type</find>
-      <find>synthesize</find>
-      <find>set_batch_size</find>
-      <find>epochs</find>
-      <find>dir</find>
       <find>ModelFac</find>
       <find>model_name</find>
       <find>batch</find>
@@ -105,6 +103,25 @@
       <find>dataset_obj</find>
       <find>error</find>
       <find>helper</find>
+      <find>create_model</find>
+      <find>conv</find>
+      <find>upsample_scales</find>
+      <find>upsample_conv</find>
+      <find>upsample_conv`</find>
+      <find>append</find>
+      <find>conv.</find>
+      <find>optimizer</find>
+      <find>learning_rate</find>
+      <find>bert</find>
+      <find>_create_model</find>
+      <find>nsml</find>
+      <find>patience</find>
+      <find>set_model</find>
+      <find>set_train_mode</find>
+      <find>train</find>
+      <find>set_trainer</find>
+      <find>verbose_step_count</find>
+      <find>trainer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,14 +133,9 @@
         <option value="$PROJECT_DIR$/tests/nlp/test_NLPsimple.py" />
         <option value="$PROJECT_DIR$/NLP/utils.py" />
         <option value="$PROJECT_DIR$/NLP/data/reader/__init__.py" />
-        <option value="$PROJECT_DIR$/NLP/learn/optimization/optimizer.py" />
-        <option value="$PROJECT_DIR$/NLP/learn/tensorboard.py" />
-        <option value="$PROJECT_DIR$/NLP/learn/utils.py" />
-        <option value="$PROJECT_DIR$/NLP/config/factory/optimizer.py" />
         <option value="$PROJECT_DIR$/NLP/config/__init__.py" />
         <option value="$PROJECT_DIR$/NLP/learn/optimization/__init__.py" />
         <option value="$PROJECT_DIR$/NLP/learn/__init__.py" />
-        <option value="$PROJECT_DIR$/NLP/learn/trainer.py" />
         <option value="$PROJECT_DIR$/NLP/learn/optimization/exponential_moving_avarage.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/train.py" />
@@ -132,7 +144,6 @@
         <option value="$PROJECT_DIR$/NLP/data/dataset/__init__.py" />
         <option value="$PROJECT_DIR$/NLP/data/data_handler.py" />
         <option value="$PROJECT_DIR$/NLP/data/batch.py" />
-        <option value="$PROJECT_DIR$/NLP/config/args.py" />
         <option value="$PROJECT_DIR$/NLP/config/registry.py" />
         <option value="$PROJECT_DIR$/NLP/model/wavenet/__init__.py" />
         <option value="$PROJECT_DIR$/NLP/model/__init__.py" />
@@ -142,14 +153,23 @@
         <option value="$PROJECT_DIR$/NLP/data/utils.py" />
         <option value="$PROJECT_DIR$/NLP/data/collate.py" />
         <option value="$PROJECT_DIR$/NLP/config/factory/data_loader.py" />
-        <option value="$PROJECT_DIR$/NLP/data/reader/base.py" />
         <option value="$PROJECT_DIR$/NLP/data/dataset/ljspeech.py" />
         <option value="$PROJECT_DIR$/NLP/data/reader/ljspeech.py" />
-        <option value="$PROJECT_DIR$/NLP/learn/experiment.py" />
         <option value="$PROJECT_DIR$/NLP/__init__.py" />
-        <option value="$PROJECT_DIR$/NLP/config/factory/model.py" />
         <option value="$PROJECT_DIR$/NLP/model/base.py" />
+        <option value="$PROJECT_DIR$/NLP/data/reader/base.py" />
+        <option value="$PROJECT_DIR$/NLP/modules/conv/conv.py" />
+        <option value="$PROJECT_DIR$/NLP/config/factory/model.py" />
+        <option value="$PROJECT_DIR$/NLP/modules/wavenet_flow/wavenet_flow.py" />
         <option value="$PROJECT_DIR$/NLP/model/wavenet/clarinet.py" />
+        <option value="$PROJECT_DIR$/NLP/modules/resblock/resblock.py" />
+        <option value="$PROJECT_DIR$/NLP/learn/optimization/optimizer.py" />
+        <option value="$PROJECT_DIR$/NLP/config/factory/optimizer.py" />
+        <option value="$PROJECT_DIR$/NLP/learn/tensorboard.py" />
+        <option value="$PROJECT_DIR$/NLP/learn/utils.py" />
+        <option value="$PROJECT_DIR$/NLP/config/args.py" />
+        <option value="$PROJECT_DIR$/NLP/learn/experiment.py" />
+        <option value="$PROJECT_DIR$/NLP/learn/trainer.py" />
       </list>
     </option>
   </component>
@@ -166,7 +186,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="840" />
-    <option name="height" value="978" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -189,21 +209,13 @@
               <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +312,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="840" height="978" extended-state="0" />
+    <frame x="0" y="23" width="840" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.31379732" />
@@ -308,8 +320,8 @@
       <window_info id="Favorites" order="2" sideWeight="0.50157726" side_tool="true" weight="0.31379732" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295711" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3939052" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32881355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27457628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32881355" />
@@ -326,9 +338,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NLP/learn/experiment.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="60" />
+          <url>file://$PROJECT_DIR$/NLP/model/wavenet/clarinet.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -336,8 +348,28 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>config
-getattr(config, model_name)</expression-string>
+        <expression-string>self.res_blocks.append(resblock.ResBlock(self.residual_channels, self.gate_channels, self.skip_channels,
+                                         self.kernel_size, dilation=self.kernel_size ** n,
+                                         cin_channels=self.cin_channels, local_conditioning=True,
+                                         causal=self.causal, mode='SAME'))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>resblock.ResBlock(self.residual_channels, self.gate_channels, self.skip_channels,
+                                                         self.kernel_size, dilation=self.kernel_size ** n,
+                                                         cin_channels=self.cin_channels, local_conditioning=True,
+                                                         causal=self.causal, mode='SAME')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>factory(item_config).create(**param)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>vars(config)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -347,93 +379,29 @@ getattr(config, model_name)</expression-string>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
+        <expression-string>vars(getattr(config, &quot;general&quot;))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>super(ClariNet, self).__init__()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>config
+getattr(config, model_name)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>getattr(config, config.model_name, None)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>DataLoader(
-            dataset,
-            batch_size=train_batch_size,
-            shuffle=shuffle,
-            collate_fn=dataset.collate_fn(cuda_device_id=cuda_device_id),
-            num_workers=0,
-            pin_memory=is_cpu,  # only CPU memory can be pinned
-        )</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dataset</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>batch</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>datas.items()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>datas.items</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>datasets[&quot;train&quot;]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>datasets['train']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NLP/learn/utils.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/learn/trainer.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/learn/optimization/learning_rate_scheduler.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/learn/optimization/optimizer.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/learn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/learn/optimization/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/learn/tensorboard.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/learn/optimization/exponential_moving_avarage.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/data/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/NLP/config/namespace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/config/factory/optimizer.py" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/utils.py" />
-    <entry file="file://$PROJECT_DIR$/tests/nlp/test_print.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/overrides/overrides.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -498,13 +466,6 @@ getattr(config, model_name)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/config/factory/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NLP/config/registry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -564,13 +525,6 @@ getattr(config, model_name)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/data/reader/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NLP/data/collate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -582,13 +536,6 @@ getattr(config, model_name)</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/config/args.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -616,33 +563,6 @@ getattr(config, model_name)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/config/pattern.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/config/factory/data_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="e#1#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/config/factory/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#1#5#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NLP/config/factory/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -654,16 +574,6 @@ getattr(config, model_name)</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NLP/data/reader/ljspeech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,38 +589,202 @@ getattr(config, model_name)</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/NLP/model/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="210">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/data/reader/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/config/factory/data_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/data/reader/ljspeech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/modules/conv/conv.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/modules/wavenet_flow/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/modules/wavenet_flow/wavenet_flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="e#1#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/modules/conv/clarinet_conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/modules/resblock/resblock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/config/factory/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/torch/nn/modules/container.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/config/factory/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NLP/model/wavenet/clarinet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="524">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
-            <element signature="e#1#5#0" expanded="true" />
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="1528" selection-start-line="1528" selection-end-line="1528" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/learn/optimization/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/config/factory/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/learn/tensorboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/learn/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8570">
+          <caret line="590" selection-start-line="590" selection-end-line="590" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#1#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NLP/learn/experiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="239">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#1#25#0" expanded="true" />
+            <element signature="e#1#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
+    <entry file="file://$PROJECT_DIR$/NLP/config/pattern.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/config/namespace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/config/args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="597" selection-start-line="597" selection-end-line="597" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/learn/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>

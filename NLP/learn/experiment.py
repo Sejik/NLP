@@ -1,15 +1,15 @@
 
-from pathlib import Path
-
 import torch
 
 from NLP.config.factory import (
     DataReaderFactory,
     DataLoaderFactory,
     ModelFactory,
+    OptimizerFactory,
 )
 
 from NLP.config.utils import convert_config2dict
+from NLP.learn.trainer import Trainer
 
 
 class Experiment:
@@ -30,8 +30,19 @@ class Experiment:
     def __call__(self):
         """ Run Trainer """
 
-        self.set_train_mode()
+        train_loader, synthesize_loader, teacher_optimizer, student_optimizer = self.set_train_mode()
         # TODO
+        assert train_loader is not None
+        assert synthesize_loader is not None
+        assert teacher_optimizer is not None
+        assert student_optimizer is not None
+
+        self.teacher_trainer.train(train_loader, teacher_optimizer)
+        self.student_trainer.train(train_loader, student_optimizer)
+        # self._summary_experiments()
+        # valid_loader = self.set_synthesize_mode()
+        # assert valid_loader is not None
+        # valid_loader = self
 
 
     def common_setting(self, config):
@@ -71,17 +82,25 @@ class Experiment:
         self.config.general.num_train_steps = num_train_steps
         self.config.general.num_synthesize_steps = num_synthesize_steps
 
-        checkpoint_dir = Path(self.config.general.log_dir) / "checkpoint"
+        # checkpoint_dir = Path(self.config.general.log_dir) / "checkpoint"
         checkpoints = None
         # TODO: CHECKPOINT_DIR.EXISTS():
 
         if checkpoints is None:
-            model = self._create_model(helpers=helpers)
+            teacher_model, student_model = self._create_model(helpers=helpers)
+            teacher_op_dict = self._create_by_factory(
+                OptimizerFactory, self.config.optimizer, param={"model": teacher_model}
+            )
+            student_op_dict = self._create_by_factory(
+                OptimizerFactory, self.config.optimizer, param={"model": student_model}
+            )
             # TODO
         # TODO: else
 
-        # self.set_trainer(model, op_dict=op_dict)
-        # return train_loader, op_dict["optimzier"]
+        # TODO: set trainer with teacher and student and run two
+        # future update to function in function
+        self.set_trainer(teacher_model, student_model, teacher_op_dict=teacher_op_dict, student_op_dict=student_op_dict)
+        return train_loader, synthesize_loader, teacher_op_dict["optimizer"], student_op_dict["optimizer"]
 
     def _create_data(self):
         data_reader = self._create_by_factory(DataReaderFactory, self.config.general)
@@ -94,7 +113,7 @@ class Experiment:
         set_size = len(train_loader.dataset)
         train_batch_size = self.config.train_batch_size
         synthesize_batch_size = self.config.synthesize_batch_size
-        num_epochs = self.config.general.num_epochs
+        num_epochs = self.config.trainer.num_epochs
 
         train_one_epoch_steps = int(set_size / train_batch_size)
         if train_one_epoch_steps == 0:
@@ -118,11 +137,32 @@ class Experiment:
 
         model_params = {}  # TODO
 
-        model = self._create_by_factory(  # 파라미터 확인
+        # TODO: have to seperate onn way model
+        teacher_model, student_model = self._create_by_factory(  # 파라미터 확인
             ModelFactory, self.config.general, param=model_params
         )
-        model.init_params = model_init_params
-        model.predict_helper = predict_helper
+        teacher_model.init_params = model_init_params
+        teacher_model.predict_helper = predict_helper
+        student_model.init_params = model_init_params
+        student_model.predict_helper = predict_helper
 
         # TODO: checkpoint
-        return model
+        return teacher_model, student_model
+
+    def set_trainer(self, teacher_model, student_model, teacher_op_dict={}, student_op_dict={}, teacher_save_params={}, student_save_params={}):
+        teacher_trainer_config = vars(self.config.trainer)
+        teacher_trainer_config["config"] = self.config_dict
+        teacher_trainer_config["model"] = teacher_model
+        teacher_trainer_config["learning_rate_scheduler"] = teacher_op_dict.get("learning_rate_scheduler", None)
+        teacher_trainer_config["exponential_moving_average"] = teacher_op_dict.get(
+            "exponential_moving_average", None
+        )
+        self.teacher_trainer = Trainer(**teacher_trainer_config)
+        student_trainer_config = vars(self.config.trainer)
+        student_trainer_config["config"] = self.config_dict
+        student_trainer_config["model"] = student_model
+        student_trainer_config["learning_rate_scheduler"] = student_op_dict.get("learning_rate_scheduler", None)
+        student_trainer_config["exponential_moving_average"] = student_op_dict.get(
+            "exponential_moving_average", None
+        )
+        self.student_trainer = Trainer(**student_trainer_config)

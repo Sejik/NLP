@@ -27,5 +27,9 @@ class ModelFactory(Factory):
 
     @overrides
     def create(self, **params):
+        if self.name == "clarinet":
+            teacher_model = self.registry.get(f"model:teacher_clarinet")
+            student_model = self.registry.get(f"model:student_clarinet")
+            return teacher_model(**self.model_config, **params), student_model(**self.model_config, **params)
         model = self.registry.get(f"model:{self.name}")
         return model(**self.model_config, **params)
